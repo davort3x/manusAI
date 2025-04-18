@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: task-manager
+    env: node
+    buildCommand: npm install
+    startCommand: node app.js
+    envVars:
+      - key: MONGODB_URI
+        value: mongodb+srv://${MONGODB_USER}:${MONGODB_PASSWORD}@${MONGODB_CLUSTER}.mongodb.net/${MONGODB_DATABASE}?retryWrites=true&w=majority
+      - key: PORT
+        value: 10000

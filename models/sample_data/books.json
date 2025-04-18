@@ -1,0 +1,38 @@
+[
+  {
+    "title": "The Psychology of Money",
+    "author": "Morgan Housel",
+    "category": "Finance",
+    "status": "In Progress",
+    "currentPage": 87,
+    "totalPages": 256,
+    "notes": "Great insights on wealth building and financial psychology"
+  },
+  {
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "category": "Self-Improvement",
+    "status": "Completed",
+    "currentPage": 320,
+    "totalPages": 320,
+    "notes": "Excellent framework for building good habits"
+  },
+  {
+    "title": "The Insect Farming Handbook",
+    "author": "Dr. Emily Richards",
+    "category": "Business",
+    "status": "To Read",
+    "currentPage": 0,
+    "totalPages": 412,
+    "notes": "Recommended by industry colleagues for scaling operations"
+  },
+  {
+    "title": "Real Estate Investing for Beginners",
+    "author": "Brandon Turner",
+    "category": "Real Estate",
+    "status": "In Progress",
+    "currentPage": 145,
+    "totalPages": 352,
+    "notes": "Good strategies for rental property management"
+  }
+]

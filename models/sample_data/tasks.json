@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Complete project proposal",
+    "description": "Finalize the project proposal for the new mealworm farm expansion",
+    "category": "Business: Mealworms/BSFL",
+    "priority": "High",
+    "dueDate": "2025-04-25",
+    "status": "In Progress",
+    "notes": "Include cost projections and ROI analysis"
+  },
+  {
+    "title": "Order new flag inventory",
+    "description": "Place order for summer flag collection",
+    "category": "Business: Flags",
+    "priority": "Medium",
+    "dueDate": "2025-04-30",
+    "status": "To Do",
+    "notes": "Check previous sales data for popular designs"
+  },
+  {
+    "title": "Schedule property inspections",
+    "description": "Arrange inspections for all rental properties",
+    "category": "Business: Rentals",
+    "priority": "High",
+    "dueDate": "2025-05-15",
+    "status": "To Do",
+    "notes": "Contact preferred inspector for availability"
+  },
+  {
+    "title": "Research new staking opportunities",
+    "description": "Evaluate new crypto staking platforms for better APR",
+    "category": "Crypto & Investments",
+    "priority": "Medium",
+    "dueDate": "2025-04-22",
+    "status": "In Progress",
+    "notes": "Compare security features and withdrawal terms"
+  },
+  {
+    "title": "Plan family vacation",
+    "description": "Research and book summer family vacation",
+    "category": "Family & Kids",
+    "priority": "Medium",
+    "dueDate": "2025-05-10",
+    "status": "To Do",
+    "notes": "Consider beach destinations with kid-friendly activities"
+  }
+]
