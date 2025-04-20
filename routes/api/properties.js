@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Property = require('../models/Property');
+const Property = require('../../models/Property');
 
 // Get all properties
 router.get('/', async (req, res) => {
