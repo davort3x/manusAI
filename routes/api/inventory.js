@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { InventoryItem, BusinessInfo } = require('../models/Inventory');
+const { InventoryItem, BusinessInfo } = require('../../models/Inventory');
 
 // Get all inventory items
 router.get('/', async (req, res) => {
