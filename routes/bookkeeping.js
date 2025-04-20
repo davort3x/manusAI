@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Bookkeeping = require('../../models/Bookkeeping');
+const Bookkeeping = require('../models/Bookkeeping');
 
 // GET bookkeeping page
 router.get('/', async (req, res) => {
