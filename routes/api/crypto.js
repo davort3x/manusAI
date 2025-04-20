@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const CryptoInvestment = require('../models/CryptoInvestment');
+const CryptoInvestment = require('../../models/CryptoInvestment');
 
 // Get all crypto investments with portfolio summary
 router.get('/', async (req, res) => {
