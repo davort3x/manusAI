@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Calendar = require('../models/Calendar');
+const Calendar = require('../../models/Calendar');
 
 // GET monthly calendar page
 router.get('/', async (req, res) => {
