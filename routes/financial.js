@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const FinancialAnalysis = require('../models/FinancialAnalysis');
+const FinancialAnalysis = require('../../models/FinancialAnalysis');
 
 // GET financial analysis page
 router.get('/', async (req, res) => {
