@@ -3,10 +3,7 @@ const router = express.Router();
 
 // GET dashboard page
 router.get('/', (req, res) => {
-  res.redirect('/tasks') { 
-    title: 'Dashboard',
-    username: 'User'
-  });
+  res.redirect('/tasks');
 });
 
 module.exports = router;
