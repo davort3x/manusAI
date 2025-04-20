@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Property = require('../../models/Property');
+const Property = require('../models/Property');
 
 // GET real estate page
 router.get('/', async (req, res) => {
