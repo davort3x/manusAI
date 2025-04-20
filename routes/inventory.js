@@ -5,7 +5,7 @@ const Inventory = require('../models/Inventory');
 // GET inventory page
 router.get('/', async (req, res) => {
   try {
-    const inventory = await Inventory.find().sort({ category: 1, productName: 1 });
+    const inventory = await InventoryItem.find().sort({ category: 1, productName: 1 });
     res.render('inventory', { 
       title: 'Inventory Management',
       inventory: inventory,
