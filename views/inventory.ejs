@@ -1,1 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- Add any specific inventory CSS if needed -->
+</head>
+<body>
+    <header>
+        <h1><%= title %></h1>
+        <nav>
+            <!-- Add navigation links if needed -->
+            <a href="/tasks">Tasks</a>
+            <a href="/reading">Reading</a>
+            <a href="/inventory">Inventory</a>
+            <a href="/real-estate">Real Estate</a>
+            <a href="/crypto">Crypto</a>
+            <a href="/bookkeeping">Bookkeeping</a>
+        </nav>
+    </header>
 
+    <main>
+        <h2>Inventory Items</h2>
+        
+        <!-- Add functionality to add new items if needed -->
+        <!-- <button>Add New Item</button> -->
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Category</th>
+                    <th>Quantity</th>
+                    <th>Unit</th>
+                    <th>Low Stock Threshold</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% if (inventory && inventory.length > 0) { %>
+                    <% inventory.forEach(item => { %>
+                        <tr>
+                            <td><%= item.productName %></td>
+                            <td><%= item.category %></td>
+                            <td><%= item.quantity %></td>
+                            <td><%= item.unit %></td>
+                            <td><%= item.lowStockThreshold %></td>
+                            <td>
+                                <% if (item.quantity <= item.lowStockThreshold) { %>
+                                    <span style="color: red;">Low Stock</span>
+                                <% } else { %>
+                                    In Stock
+                                <% } %>
+                            </td>
+                            <td>
+                                <!-- Add edit/delete buttons if needed -->
+                                <!-- <button>Edit</button> -->
+                                <!-- <button>Delete</button> -->
+                            </td>
+                        </tr>
+                    <% }); %>
+                <% } else { %>
+                    <tr>
+                        <td colspan="7">No inventory items found.</td>
+                    </tr>
+                <% } %>
+            </tbody>
+        </table>
+
+        <!-- Display Business Info if needed -->
+        <% /* if (typeof businessInfo !== 'undefined' && businessInfo) { %>
+            <h2>Business Information</h2>
+            <p>Name: <%= businessInfo.businessName %></p>
+            <p>Contact: <%= businessInfo.contactPerson %></p>
+            <p>Email: <%= businessInfo.email %></p>
+        <% } */ %>
+    </main>
+
+    <footer>
+        <p>&copy; <%= new Date().getFullYear() %> Task Manager</p>
+    </footer>
+
+    <!-- Add any specific inventory JS if needed -->
+    <!-- <script src="/js/inventory.js"></script> -->
+</body>
+</html>
